@@ -7,7 +7,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install
-        run: npm ci
+        run: npm i
       - name: Test app
         run: npm run test
   lint:
@@ -16,7 +16,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install
-        run: npm ci
+        run: npm i
       - name: Lint app
         run: npm run lint
   build:
@@ -25,7 +25,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install
-        run: npm ci
+        run: npm i
       - name: Build app
         run: npm run build
       - name: Deploy
